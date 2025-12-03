@@ -66,7 +66,11 @@ echo "Rigel basestation software packages installed"
 # configure system
 echo "Configuring system"
 
-# turn off auto update, a, b, c etc.
+# for each step, you need to consider how these changes can be reverted in an uninstall script.
+# e.g. if you only need to add a line to some file, use commands such as `sed` and `tee`. This
+# means the line can be removed with these commands later on.
+
+# turn off auto update, configure this and that etc.
 # add udev rules, set up auto launch, etc..
 
 echo "System configured"
