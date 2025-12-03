@@ -19,5 +19,6 @@ blah blah blah...
 blah blah blah...
 
 ## List of related repositories (optional)
+- [rigel_meta](https://github.com/AnthonyMiMi/rigel_meta)
 - [rigel_basestation_ros](https://github.com/AnthonyMiMi/rigel_basestation_ros)
 - [rigel_common](https://github.com/AnthonyMiMi/rigel_common)
