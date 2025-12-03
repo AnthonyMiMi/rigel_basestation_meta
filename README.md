@@ -12,9 +12,7 @@ For private repository, it is probably unlikely to be used by developers so no p
 ```shell
 mkdir -p ${HOME}/rigel/rigel_ws/src
 cd ${HOME}/rigel
-git clone -b jazzy git@github.com:AnthonyMiMi/rigel_basestation_meta.git
-cd rigel_basestation_meta/scripts
-bash install.sh
+git clone -b jazzy git@github.com:AnthonyMiMi/rigel_basestation_meta.git && bash rigel_basestation_meta/scripts/install.sh
 ```
 
 
