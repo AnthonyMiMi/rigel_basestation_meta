@@ -2,13 +2,25 @@
 The meta repostiory for Rigel basestation PC
 
 ## Install
-```bash
+A one-liner is provided for installing the software.
+```shell
 cd ${HOME} && wget -c https://raw.githubusercontent.com/AnthonyMiMi/rigel_basestation_meta/refs/heads/jazzy/scripts/install.sh && chmod +x install.sh && ./install.sh && rm install.sh
 ```
+Note that this only works if the installation script is in a public repository.
+
+For private repository, it is probably unlikely to be used by developers so no problem adding more steps:
+```shell
+mkdir -p ${HOME}/rigel/rigel_ws/src
+cd ${HOME}/rigel
+git clone -b jazzy git@github.com:AnthonyMiMi/rigel_basestation_meta.git
+cd rigel_basestation_meta/scripts
+bash install.sh
+```
+
 
 ## Use
 ### Launch
-```bash
+```shell
 ros2 launch rigel_basestation_ros basestation_bringup.launch.py
 ```
 ### Control
